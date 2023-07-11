@@ -1,13 +1,110 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Roboto;
+  src: url("./assets//fonts//Roboto-Black.ttf") format("truetype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: Lato;
+  src: url("./assets//fonts/Lato-Black.ttf") format("truetype");
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.hero-background {
+  height: 100vh !important;
+  background-image: url(https://redsandventures.io/wp-content/uploads/2023/02/hero-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-top {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/public//rs.png");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  background-attachment: fixed;
+}
+
+.d-ul li {
+  font-weight: 600;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  padding-bottom: 45px;
+}
+
+d-ul li:hover,
+li.active {
+  cursor: pointer;
+  color: #e7106c;
+  border-bottom: 2px solid #e7106c;
+}
+
+.hero-main-div {
+  position: relative;
+  height: calc(100vh - 140px);
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.main-heading-text1 {
+  font-family: "Lato", Sans-serif;
+  font-size: 3.4vw;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.main-heading-details {
+  color: #ffffff;
+  font-family: "Lato", Sans-serif;
+  /* font-size: 1.2vw; */
+  font-weight: 600;
+}
+
+.wed {
+  font-family: "Roboto", Sans-serif;
+  font-size: 2.4vw;
+  font-weight: 600;
+  color: white;
+}
+
+.bs {
+  font-family: "Roboto", Sans-serif;
+  font-size: clamp(4vw, 1.8vw, 4rem);
+  font-weight: normal;
+  color: black;
+}
+.slider {
+  margin-top: 600px;
+  background-color: rgb(240, 240, 240);
+}
+
+.star-container svg {
+  width: 20px !important;
+  height: 20px !important;
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}
+.star-container {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
